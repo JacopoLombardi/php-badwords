@@ -22,5 +22,19 @@
 </head>
 <body>
 
+   <div class="container  mt-5">
+      <form class="w-25">
+         <div class="mb-3">
+            <label class="form-label">Nome</label>
+            <input type="text" class="form-control">
+         </div>
+         <div class="mb-4">
+            <label class="form-label">Cognome</label>
+            <input type="text" class="form-control">
+         </div>
+         <button type="submit" class="btn  btn-primary  fw-semibold">Submit</button>
+      </form>
+   </div>
+
 </body>
 </html>
