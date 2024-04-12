@@ -2,8 +2,16 @@
 <!-- PHP -->
 <?php
 
+   // landing data
    $name = $_POST['nome'];
-   $surname = $_POST['nome'];
+   $surname = $_POST['cognome'];
+
+   // lunghezza delle parole
+   $lengthName = strlen($name);
+   $lengthSurname = strlen($surname);
+
+   // cognome censurato
+   $censuredSurname = '***';
 
 ?>
 
@@ -21,8 +29,13 @@
    <title>Landing Page</title>
 </head>
 <body>
+   <div class="container  mt-5">
 
-   <h3><?php echo $name ?></h3>
+      <h3>Il nome é <strong><?php echo $name ?></strong> ed è lungo <?php echo $lengthName ?> lettere</h3>
+
+      <h3>Il cognome é <strong><?php echo $censuredSurname ?></strong> ed è lungo <?php echo $lengthSurname ?> lettere</h3>
+
+   </div>
 
    
 </body>
